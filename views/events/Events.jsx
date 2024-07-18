@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import EventsCard from "./EventsCard.jsx";
+import EventsHero from './Eventshero.jsx'
 const Events = () => {
   const [events, setEvents] = useState([]);
   const [error, setError] = useState(null);
@@ -40,7 +41,7 @@ const Events = () => {
 
   return (
     <>
-      <div className="w-full lg:h-[50vh] md:h-[60vh] max-md:h-[40vh]  relative">
+      {/* <div className="w-full lg:h-[50vh] md:h-[60vh] max-md:h-[40vh]  relative">
 
         <img src="/g7.jpg" className="object-stretch w-full h-full " />
         <div className="w-full max-w-md absolute left-0 right-0 ml-auto mr-auto bottom-10">
@@ -71,8 +72,9 @@ const Events = () => {
             </button>
           </form>
         </div>
-      </div>
+      </div> */}
 
+      <h1>Hello </h1>
       <div className="relative w-screen overflow-hidden h-fit">
         <div className="flex flex-row w-full h-fit justify-evenly text-xl mx-4 my-2">
           {eventTypes.map((ele) => {
